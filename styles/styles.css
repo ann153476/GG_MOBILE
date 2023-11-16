@@ -28,9 +28,9 @@ header {
   box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
   transform: translateY(1px);
 }
-p {
+/* p {
   width: 10vw;
-}
+} */
 svg {
   margin: 5px;
   width: 30px;
