@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  border: 1px solid red;
+  background-color: transparent;
+  height: 10vh;
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(5px);
+}
+.custom-btn {
+  background-color: rgb(223, 223, 223);
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  border: 1px solid red;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s, transform 0.1s;
+}
+
+.custom-btn:active {
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transform: translateY(1px);
+}
+p {
+  width: 10vw;
+}
+svg {
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid red;
+}
+.test {
+  border: 1px solid red;
+  border: 1px solid blue;
+}
+.tets2 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  margin: 40px;
+}
