@@ -1,24 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
+  font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+body {
+  padding: 12vh 0 0;
+  overflow-x: hidden;
+}
 header {
-  border: 1px solid red;
   background-color: transparent;
-  height: 10vh;
+  height: 12vh;
+  top: 0;
   position: fixed;
   width: 100%;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
+  z-index: 999;
+}
+header > div {
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+header ul {
+  padding: 1vh 0;
+  display: flex;
+  justify-content: space-around;
 }
 .custom-btn {
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(247, 245, 245);
   color: #ffffff;
   width: 40px;
   height: 40px;
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; */
-  border: 1px solid red;
+  justify-content: center;
+  border: none;
   border-radius: 5px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s, transform 0.1s;
@@ -28,16 +51,163 @@ header {
   box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
   transform: translateY(1px);
 }
+
 /* p {
   width: 10vw;
 } */
-svg {
+.h__svg__menu,
+.h__svg__search {
   margin: 5px;
   width: 30px;
   height: 30px;
+}
+.h__svg__menu {
+  stroke: rgb(88, 88, 88);
+}
+.h__svg__search {
+  fill: rgb(88, 88, 88);
+}
+.custom-btn:hover .h__svg__menu {
+  stroke: #5b5fdd;
+}
+.custom-btn:hover .h__svg__search {
+  fill: #5b5fdd;
+}
+header a {
+  color: rgb(69, 66, 66);
+}
+header a:hover {
+  color: #5b5fdd;
+}
+#icon-untitled {
+  stroke: rgb(63, 63, 63);
+}
+.food__card {
+  position: relative;
+  box-sizing: border-box;
+  width: 45vw;
+  height: 75vw;
+  padding: 2.5vw;
+  border-radius: 5%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s, transform 0.1s;
+}
+.food__card img {
+  width: 40vw;
+  height: 40vw;
+  object-fit: contain;
+}
+.card__box {
+  height: 27vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card__box p:nth-child(1) {
+  font-size: 1.2em;
+}
+.card__box p:nth-child(2) {
+  color: rgb(118, 117, 117);
+  font-size: 0.5em;
+}
+.card__box p:nth-child(3) {
+  text-align: start;
+  font-size: 1.5em;
+}
+.product-item {
+  position: absolute;
+  top: 1vw;
+  left: 3vw;
+  color: rgb(211, 208, 208);
+}
+.add__food {
+  position: absolute;
+  bottom: 2vw;
+  right: 2vw;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  background-color: #f1f1f1;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s, transform 0.1s;
+}
+.add__food:active {
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transform: translateY(1px);
+}
+.icon-add {
+  width: 10vw;
+  height: 10vw;
+  stroke: rgb(33, 33, 33);
+}
+.add__food:hover .icon-add {
+  stroke: #5b5fdd;
+}
+.food__box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.food__card {
+  margin-bottom: 5vw;
+}
+/* bac */
+body {
+  background-color: rgba(198, 199, 232, 0.333);
+}
+.all {
+  position: absolute;
+  top: 0;
+}
+.food__card {
+  background-color: #ffffff58;
+  backdrop-filter: blur(40px);
+}
+.ball_box {
   border: 1px solid red;
-  background-color: aqua;
 }
-span {
-  color: red;
+.b1,
+.b2,
+.b3,
+.b4,
+.b5 {
+  border-radius: 50%;
+  position: fixed;
 }
+.b1 {
+  top: 20%;
+  left: 30%;
+  background-color: rgb(249, 186, 122);
+  width: 50vw;
+  height: 50vw;
+}
+.b2 {
+  top: 5%;
+  left: -30%;
+  background-color: rgb(138, 255, 128);
+  width: 60vw;
+  height: 60vw;
+}
+.b3 {
+  bottom: -10%;
+  right: -10%;
+  background-color: rgb(128, 244, 255);
+  width: 60vw;
+  height: 60vw;
+}
+.b4 {
+  bottom: -2%;
+  left: -60%;
+  background-color: rgb(150, 28, 243);
+  width: 100vw;
+  height: 100vw;
+}
+.b5 {
+  bottom: 25%;
+  right: -40%;
+  background-color: rgb(250, 248, 160);
+  width: 80vw;
+  height: 80vw;
+}
+/* bac */
