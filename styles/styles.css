@@ -179,35 +179,35 @@ body {
   top: 20%;
   left: 30%;
   background-color: rgb(249, 186, 122);
-  width: 50vw;
-  height: 50vw;
+  width: 10em;
+  height: 10em;
 }
 .b2 {
   top: 5%;
   left: -30%;
   background-color: rgb(138, 255, 128);
-  width: 60vw;
-  height: 60vw;
+  width: 12em;
+  height: 12em;
 }
 .b3 {
   bottom: -10%;
   right: -10%;
   background-color: rgb(128, 244, 255);
-  width: 60vw;
-  height: 60vw;
+  width: 12em;
+  height: 12em;
 }
 .b4 {
   bottom: -2%;
   left: -60%;
   background-color: rgb(150, 28, 243);
-  width: 100vw;
-  height: 100vw;
+  width: 20em;
+  height: 20em;
 }
 .b5 {
   bottom: 25%;
   right: -40%;
   background-color: rgb(250, 248, 160);
-  width: 80vw;
-  height: 80vw;
+  width: 16em;
+  height: 16em;
 }
 /* bac */
