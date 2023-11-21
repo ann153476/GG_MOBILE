@@ -21,7 +21,7 @@ header {
   position: fixed;
   width: 100%;
   backdrop-filter: blur(15px);
-  z-index: 999;
+  z-index: 99;
 }
 header > div {
   padding: 2%;
@@ -164,9 +164,7 @@ body {
   background-color: #ffffff58;
   backdrop-filter: blur(40px);
 }
-.ball_box {
-  border: 1px solid red;
-}
+
 .b1,
 .b2,
 .b3,
@@ -211,3 +209,126 @@ body {
   height: 16em;
 }
 /* bac */
+.sale {
+  width: 45vw;
+  height: 75vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sale img {
+  width: 45vw;
+  height: 45vw;
+}
+.all {
+  padding-top: 12vh;
+}
+/* modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(238, 230, 230, 0.927);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal__img {
+  margin: 5vh 0;
+  height: 30vh;
+  width: 30vh;
+  object-fit: contain;
+  border: 1px solid red;
+}
+.icon-left {
+  stroke: rgb(86, 86, 86);
+  fill: none;
+}
+.icon-star {
+  stroke: rgb(86, 86, 86);
+  fill: none;
+}
+.m__back__btn,
+.m__star__btn {
+  position: absolute;
+  top: 2em;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(246, 248, 250);
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s, transform 0.1s;
+}
+.m__back__btn:active,
+.m__star__btn:active {
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transform: translateY(1px);
+}
+.m__back__btn {
+  left: 1em;
+}
+.m__star__btn {
+  right: 1em;
+}
+.modal__box {
+  position: relative;
+  padding: 2em;
+  border: 1px solid rgb(43, 255, 0);
+  background-color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-top-right-radius: 2em;
+  border-top-left-radius: 2em;
+  height: 60vh;
+}
+.modal h1 {
+  color: #ff7c63;
+  font-size: 3em;
+}
+.product-list-item__control {
+  margin: 1vh 0;
+  border: 1px solid rgb(0, 0, 0);
+  width: 40vw;
+  height: 15vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1em;
+}
+.m__minus__btn,
+.m__plus__btn {
+  background-color: transparent;
+  border: none;
+  width: 3em;
+  height: 3em;
+}
+.m__minus__svg,
+.m__plus__svg {
+  stroke: rgb(84, 83, 83);
+  width: 3em;
+  height: 3em;
+}
+.modal__description {
+  border: 1px solid red;
+  height: 19vh;
+  overflow: scroll;
+  color: grey;
+}
+.menu__bar {
+  position: absolute;
+  z-index: 999;
+}
+.menu__bar {
+  width: 100%;
+  border: 1px solid red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
