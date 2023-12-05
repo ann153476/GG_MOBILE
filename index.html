@@ -38,95 +38,7 @@
           <li><a href="#">Bakery</a></li>
         </ul>
       </header>
-      <div class="food__box">
-        <div class="food__card">
-          <p class="product-item">Fruits</p>
-          <img src="./img/photo/580b57fbd9996e24bc43c0a0.png" alt="food" />
-          <div class="card__box">
-            <p>name</p>
-            <p>description</p>
-            <p>$12.00</p>
-          </div>
-          <div class="add__food">
-            <svg class="icon-add">
-              <use href="./img/symbol-defs.svg#icon-untitled"></use>
-            </svg>
-          </div>
-        </div>
-        <a class="sale" href="#">
-          <img src="./img/sale.png" />
-        </a>
-        <div class="food__card">
-          <p class="product-item">Fruits</p>
-          <img src="./img/photo/580b57fbd9996e24bc43c0a0.png" alt="food" />
-          <div class="card__box">
-            <p>name</p>
-            <p>description</p>
-            <p>$12.00</p>
-          </div>
-          <div class="add__food">
-            <svg class="icon-add">
-              <use href="./img/symbol-defs.svg#icon-untitled"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="food__card">
-          <p class="product-item">Fruits</p>
-          <img src="./img/photo/580b57fbd9996e24bc43c0a0.png" alt="food" />
-          <div class="card__box">
-            <p>name</p>
-            <p>description</p>
-            <p>$12.00</p>
-          </div>
-          <div class="add__food">
-            <svg class="icon-add">
-              <use href="./img/symbol-defs.svg#icon-untitled"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="food__card">
-          <p class="product-item">Fruits</p>
-          <img src="./img/photo/580b57fbd9996e24bc43c0a0.png" alt="food" />
-          <div class="card__box">
-            <p>name</p>
-            <p>description</p>
-            <p>$12.00</p>
-          </div>
-          <div class="add__food">
-            <svg class="icon-add">
-              <use href="./img/symbol-defs.svg#icon-untitled"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="food__card">
-          <p class="product-item">Fruits</p>
-          <img src="./img/photo/580b57fbd9996e24bc43c0a0.png" alt="food" />
-          <div class="card__box">
-            <p>name</p>
-            <p>description</p>
-            <p>$12.00</p>
-          </div>
-          <div class="add__food">
-            <svg class="icon-add">
-              <use href="./img/symbol-defs.svg#icon-untitled"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="food__card">
-          <p class="product-item">Fruits</p>
-          <img src="./img/photo/580b57fbd9996e24bc43c0a0.png" alt="food" />
-          <div class="card__box">
-            <p>name</p>
-            <p>description</p>
-            <p>$12.00</p>
-          </div>
-          <div class="add__food">
-            <svg class="icon-add">
-              <use href="./img/symbol-defs.svg#icon-untitled"></use>
-            </svg>
-          </div>
-        </div>
-      </div>
+      <div class="food__box"></div>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quibusdam
         iure unde. Deserunt tempora quibusdam consectetur, dicta rerum aut
@@ -186,7 +98,6 @@
       </p>
     </div>
     <div class="modal">
-      <img class="modal__img" src="./img/photo/cake.png" />
       <button class="m__back__btn" type="button">
         <svg class="icon-left">
           <use href="./img/symbol-defs.svg#icon-left"></use>
@@ -197,37 +108,54 @@
           <use href="./img/symbol-defs.svg#icon-star"></use>
         </svg>
       </button>
+      <img class="modal__img" />
       <div class="modal__box">
-        <h1>name</h1>
-        <div class="product-list-item__control">
-          <button class="m__minus__btn">
-            <svg class="m__minus__svg">
-              <use href="./img/symbol-defs.svg#icon-minus"></use>
-            </svg>
-          </button>
-          <p class="product-list-item__control__number"></p>
-          <button class="m__plus__btn">
-            <svg class="m__plus__svg">
+        <h1 class="product__name__modal"></h1>
+        <div class="product-list">
+          <div class="product-list-item__control">
+            <button class="m__minus__btn" disabled>
+              <svg class="m__minus__svg">
+                <use href="./img/symbol-defs.svg#icon-minus"></use>
+              </svg>
+            </button>
+            <p class="product-list-item__control__number"></p>
+            <button class="m__plus__btn">
+              <svg class="m__plus__svg">
+                <use href="./img/symbol-defs.svg#icon-plus"></use>
+              </svg>
+            </button>
+          </div>
+          <p class="cost__p">$<span class="cost"></span></p>
+        </div>
+        <p class="modal__description"></p>
+        <div class="menu__bar">
+          <button class="menu__bar__btn__plus" type="button">
+            <svg class="plus__svg">
               <use href="./img/symbol-defs.svg#icon-plus"></use>
             </svg>
           </button>
-        </div>
-        <p class="modal__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquid
-          amet culpa commodi laboriosam fugiat totam vel earum adipisci,
-          eligendi omnis, quaerat voluptatem expedita animi. Animi incidunt
-          obcaecati temporibus quae ut cumque quasi laboriosam natus eius nobis.
-          Eius veritatis perferendis sequi aut animi praesentium impedit quos
-          consequatur sed laborum omnis inventore repudiandae, nobis natus!
-          Delectus voluptatibus velit, inventore quasi eveniet sunt! Hic facilis
-          amet incidunt porro tempore, necessitatibus expedita accusantium
-          laudantium autem, ducimus unde dolore doloremque repellendus, ea error
-          sint eaque deleniti cum earum voluptatibus. Reprehenderit atque, ipsam
-          architecto maiores soluta animi est eaque laboriosam earum? Suscipit
-          distinctio dolores animi?
-        </p>
-        <div class="menu__bar">
-          <img class="menu__bar__bac" src="./img/Menu-bar.png" />
+          <button class="menu__bar__btn">
+            <svg>
+              <use href="./img/symbol-defs.svg#icon-Menu-1"></use>
+            </svg>
+          </button>
+
+          <button class="menu__bar__btn">
+            <svg>
+              <use href="./img/symbol-defs.svg#icon-Menu-2"></use>
+            </svg>
+          </button>
+          <div class="menu__bar__btn"></div>
+          <button class="menu__bar__btn">
+            <svg>
+              <use href="./img/symbol-defs.svg#icon-Menu-3"></use>
+            </svg></button
+          ><button class="menu__bar__btn">
+            <svg>
+              <use href="./img/symbol-defs.svg#icon-Menu-4"></use>
+            </svg>
+          </button>
+          <!-- <img class="menu__bar__bac" src="./img/Menu-bar.png" /> -->
         </div>
       </div>
     </div>

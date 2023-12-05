@@ -109,7 +109,7 @@ header a:hover {
 }
 .card__box p:nth-child(2) {
   color: rgb(118, 117, 117);
-  font-size: 0.5em;
+  font-size: 0.7em;
 }
 .card__box p:nth-child(3) {
   text-align: start;
@@ -228,7 +228,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
   background-color: rgba(238, 230, 230, 0.927);
   z-index: 100;
@@ -236,6 +236,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  transform: translateX(-100%);
+  transition: transform 1s linear;
 }
 .modal__img {
   margin: 5vh 0;
@@ -243,6 +245,10 @@ body {
   width: 30vh;
   object-fit: contain;
   border: 1px solid red;
+}
+.m__back__btn:hover .icon-left,
+.m__star__btn:hover .icon-star {
+  stroke: #ff7c63;
 }
 .icon-left {
   stroke: rgb(86, 86, 86);
@@ -256,13 +262,13 @@ body {
 .m__star__btn {
   position: absolute;
   top: 2em;
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(246, 248, 250);
+  background-color: rgba(211, 221, 231, 0.151);
   border: none;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s, transform 0.1s;
@@ -280,23 +286,29 @@ body {
 }
 .modal__box {
   position: relative;
-  padding: 2em;
+  padding: 1em 2em 15vh;
   border: 1px solid rgb(43, 255, 0);
   background-color: white;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   border-top-right-radius: 2em;
   border-top-left-radius: 2em;
   height: 60vh;
+  width: 82vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 .modal h1 {
   color: #ff7c63;
+  width: 100%;
   font-size: 3em;
 }
 .product-list-item__control {
   margin: 1vh 0;
   border: 1px solid rgb(0, 0, 0);
   width: 40vw;
-  height: 15vw;
+  height: 12vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -316,19 +328,79 @@ body {
   height: 3em;
 }
 .modal__description {
-  border: 1px solid red;
   height: 19vh;
+  width: 100%;
+  border: 1px solid red;
   overflow: scroll;
   color: grey;
 }
 .menu__bar {
+  border: 1px solid red;
+  background-image: url("../img/Menu-bar.png");
+  background-size: contain;
+  background-position: center;
   position: absolute;
   z-index: 999;
-}
-.menu__bar {
   width: 100%;
-  border: 1px solid red;
+  height: 12vh;
   position: absolute;
   bottom: 0;
   left: 0;
+}
+.product-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cost__p {
+  color: rgb(255, 153, 0);
+  font-size: 2.5em;
+}
+.product-list-item__control__number {
+  color: pink;
+  font-size: 2em;
+}
+.menu__bar__btn__plus {
+  width: 5.5em;
+  height: 5.5em;
+  background-color: #ff7c63;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10vh;
+  top: -1vh;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+}
+.plus__svg {
+  width: 4em;
+  height: 4em;
+  stroke: white;
+}
+.menu__bar__btn {
+  width: 3em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+.menu__bar__btn svg {
+  fill: transparent;
+  stroke: #ff7c63;
+  width: 3em;
+  height: 3em;
+}
+.menu__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.m__minus__btn:disabled .m__minus__svg {
+  stroke: #f7ded9;
+}
+.m__plus__svg {
+  stroke: #ff7c63;
 }
